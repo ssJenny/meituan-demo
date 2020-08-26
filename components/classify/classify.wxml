@@ -1,0 +1,10 @@
+<view class="~card my-class">
+  <view class="types-group ~clearfix">
+    <view class="type-list" wx:for="{{types}}" wx:for-item="type">
+      <view class="icon-wrapper" style="background-color: {{type.color}}">
+        <icon class="~iconfont ~{{type.icon}} ~color-white ~text-xxl"></icon>
+      </view>
+      <text class="~text-sm ~block title">{{ type.title }}</text>
+    </view>
+  </view>
+</view>

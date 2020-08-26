@@ -1,0 +1,17 @@
+.types-group .type-list {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 18rpx;
+}
+.type-list .icon-wrapper {
+  display: inline-block;
+  width: 90rpx;
+  height: 90rpx;
+  vertical-align: middle;
+  line-height: 90rpx;
+  border-radius: 50%;
+}
+.type-list .title {
+  margin-top: 10rpx;
+}

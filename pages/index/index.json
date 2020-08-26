@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "m-type": "../../components/classify/classify",
+    "m-shop": "../../components/shop-list/shop"
+  }
 }

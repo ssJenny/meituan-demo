@@ -16,16 +16,7 @@
     </view>
 
     <!-- 分类 -->
-    <view class="card mt-1">
-      <view class="types-group clearfix">
-        <view class="type-list" wx:for="{{types}}" wx:for-item="type">
-          <view class="icon-wrapper" style="background-color: {{type.color}}">
-            <icon class="iconfont {{type.icon}} color-white text-xxl"></icon>
-          </view>
-          <text class="text-sm title block">{{ type.title }}</text>
-        </view>
-      </view>
-    </view>
+    <m-type my-class="mt-1" types="{{types}}"></m-type>
 
     <!-- 任务 -->
     <view class="task-card mt-1 clearfix">
@@ -70,25 +61,7 @@
         </view>
     </view>
 
-    <view class="mt-2">
-      <text class="block text-xl">附近商家</text>
-    </view>
+    <m-shop shops="{{merchant}}" />
 
-    <view class="shop-group">
-      <view class="card mt-1 clearfix" wx:for="{{merchant}}" wx:for-item="shop">
-        <view class="shop-image float-left">
-          <image src="{{shop.picUrl}}"></image>
-        </view>
-        <view class="shop-info">
-          <text class="block text-ellipsis shop-name">{{ shop.shopName }}</text>
-          <view class="clearfix">
-            <view class="float-left">
-              <text class="text-sm color-gray">{{ shop.wmPoiScore / 10 }}</text>
-              <text class="text-sm color-gray ml-1">{{ unescape(shop.monthSalesTip) }}</text>
-            </view>
-          </view>
-        </view>
-      </view>
-    </view>
   </view>
 </view>

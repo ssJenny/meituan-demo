@@ -1,0 +1,97 @@
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-sm {
+  font-size: 24rpx;
+}
+.text-base {
+  font-size: 28rpx;
+}
+.text-lg {
+  font-size: 32rpx;
+}
+.text-xl {
+  font-size: 38rpx;
+}
+.text-xxl {
+  font-size: 46rpx;
+}
+
+.mt-1 {
+  margin-top: 24rpx;
+}
+.mt-2 {
+  margin-top: 48rpx;
+}
+.ml-1 {
+  margin-left: 24rpx;
+}
+.ml-2 {
+  margin-left: 48rpx;
+}
+
+.color-primary {
+  color: #ffd161;
+}
+.color-white {
+  color: #fff;
+}
+.color-disabled {
+  color: #bfbfbf;
+}
+.color-red {
+  color: #F85E4E;
+}
+.color-gray {
+  color: #adadad;
+}
+
+.bgc-primary {
+  background-color: #ffd161;
+}
+.bgc-gray {
+  background-color: #e6e6e6;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 28rpx;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

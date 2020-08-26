@@ -33,23 +33,7 @@
   height: 100%;
   padding-left: 80rpx;
 }
-.types-group .type-list {
-  float: left;
-  width: 20%;
-  text-align: center;
-  margin-top: 18rpx;
-}
-.type-list .icon-wrapper {
-  display: inline-block;
-  width: 90rpx;
-  height: 90rpx;
-  vertical-align: middle;
-  line-height: 90rpx;
-  border-radius: 50%;
-}
-.type-list .title {
-  margin-top: 10rpx;
-}
+
 .task-card {
   background-color: #FFF8E1;
   border-radius: 24rpx;
@@ -80,19 +64,4 @@
   height: 200rpx;
   width: 100%;
   border-radius: 30rpx;
-}
-.shop-group .shop-image {
-  width: 30%;
-}
-.shop-group .shop-image image {
-  height: 180rpx;
-  max-width: 100%;
-  border-radius: 20rpx;
-  border: 1px solid #dbdbdb;
-}
-.shop-info {
-  margin-left: 33%;
-}
-.shop-group .shop-name {
-  font-weight: bold;
 }

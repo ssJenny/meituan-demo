@@ -1,0 +1,34 @@
+<view class="~mt-2">
+  <text class="~block ~text-xl">附近商家</text>
+</view>
+<view class="shop-group">
+  <view class="~card ~mt-1 ~clearfix" wx:for="{{shops}}" wx:for-item="shop">
+    <view class="shop-image ~float-left">
+      <image src="{{shop.picUrl}}"></image>
+    </view>
+    <view class="shop-info ~text-sm ~color-gray">
+      <text class="~block ~text-ellipsis shop-name ~text-base">{{ shop.shopName }}</text>
+      <view class="shop-info-line">
+        <view class="~float-left">
+          <icon class="~iconfont ~icon-start ~color-primary"></icon>
+          <text wx:if="{{shop.wmPoiScore}}">{{ shop.wmPoiScore / 10 }}</text>
+          <text class="~ml-1">{{ shop.monthSalesTip }}</text>
+        </view>
+        <view class="~float-right right-info">
+          <text>{{ shop.deliveryTimeTip }}</text>
+          <text class="~ml-1">{{ shop.distance }}</text>
+        </view>
+      </view>
+      <view class="shop-info-line">
+        <view class="~float-left">
+          <text>{{ shop.minPriceTip }}</text>
+          <text class="~ml-1">{{ shop.shippingFeeTip }}</text>
+          <text class="~ml-1" wx:if="{{shop.averagePriceTip}}">{{ shop.averagePriceTip }}</text>
+        </view>
+      </view>
+      <view class="shop-info-line">
+        <text>营业时间: {{ shop.shipping_time }}</text>
+      </view>
+    </view>
+  </view>
+</view>

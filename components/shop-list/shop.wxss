@@ -1,0 +1,23 @@
+.shop-group .shop-image {
+  width: 30%;
+}
+.shop-group .shop-image image {
+  height: 180rpx;
+  max-width: 100%;
+  border-radius: 20rpx;
+  border: 1px solid #dbdbdb;
+}
+.shop-info {
+  margin-left: 33%;
+}
+.shop-group .shop-name {
+  font-weight: bold;
+  color: #333;
+}
+.shop-info-line {
+  overflow: hidden;
+  margin-top: 8rpx;
+}
+.shop-info-line .right-info {
+  margin-top: 18rpx;
+}
