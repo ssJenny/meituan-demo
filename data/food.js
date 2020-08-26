@@ -1,0 +1,146 @@
+const recommend = [
+  {
+    "spuName":"香菇鸡+牛肉丝套饭",
+    "unit":"约200克",
+    "spuId":2545682294,
+    "tag":"101146541",
+    "activityTag":"discount",
+    "littleImageUrl":"http://p1.meituan.net/wmproduct/7f5220fa0325e1d3ac376370ccf3ed5a85774.jpg",
+    "bigImageUrl":"http://p1.meituan.net/wmproduct/7f5220fa0325e1d3ac376370ccf3ed5a85774.jpg",
+    "saleVolume":0,
+    "saleVolumeDecoded":"+",
+    "originPrice":23,
+    "currentPrice":18.99,
+    "spuDesc":"香菇鸡+牛肉丝+白饭+汤+小菜",
+    "praiseNum":0,
+    "praiseNumDecoded":"",
+    "sellStatus":0,
+    "activityType":1,
+    "skuList":[
+        {
+            "skuId":2879970376,
+            "spec":"(约200克)",
+            "soldStatus":0,
+            "realStock":-1,
+            "activityStock":-1,
+            "minPurchaseNum":-1,
+            "restrict":1,
+            "originPrice":23,
+            "currentPrice":18.99,
+            "boxFee":2,
+            "skuPromotionInfo":"8.26折 限1份",
+            "count":0
+        }
+    ],
+    "spuAttrList":[
+
+    ],
+    "spuPromotionInfo":"8.26折 限1份",
+    "activityPolicy":{
+        "discountByCount":{
+            "count":0,
+            "discount":1
+        }
+    },
+    "statusDesc":""
+  },
+  {
+    "spuName":"经典卤肉饭（全卤肉.不辣.汁多下饭）",
+    "unit":"约200克",
+    "spuId":1944894495,
+    "tag":"101146541",
+    "activityTag":"discount",
+    "littleImageUrl":"http://p0.meituan.net/wmproduct/1c9ece6889865db740f025eee06ffcbb137944.jpg",
+    "bigImageUrl":"http://p0.meituan.net/wmproduct/1c9ece6889865db740f025eee06ffcbb137944.jpg",
+    "saleVolume":0,
+    "saleVolumeDecoded":"+",
+    "originPrice":22,
+    "currentPrice":19.99,
+    "spuDesc":"清淡不辣，汁多下饭",
+    "praiseNum":0,
+    "praiseNumDecoded":"",
+    "sellStatus":0,
+    "activityType":1,
+    "skuList":[
+        {
+            "skuId":2212524132,
+            "spec":"(约200克)",
+            "soldStatus":0,
+            "realStock":-1,
+            "activityStock":-1,
+            "minPurchaseNum":-1,
+            "restrict":1,
+            "originPrice":22,
+            "currentPrice":19.99,
+            "boxFee":2,
+            "skuPromotionInfo":"9.09折 限1份",
+            "count":0
+        }
+    ],
+    "spuAttrList":[
+
+    ],
+    "spuPromotionInfo":"9.09折 限1份",
+    "activityPolicy":{
+        "discountByCount":{
+            "count":0,
+            "discount":1
+        }
+    },
+    "statusDesc":"",
+    "productLabelPictureList":[
+        {
+            "pictureUrl":"http://p1.meituan.net/aichequan/c9bcb26d2e342c7bffd0267ae3f129c03286.png",
+            "width":"120",
+            "height":"30"
+        }
+    ]
+  },
+  {
+    "spuName":"香菇滑鸡＋功夫腿排饭",
+    "unit":"约150克",
+    "spuId":1640359050,
+    "tag":"101146541",
+    "activityTag":"discount",
+    "littleImageUrl":"http://p0.meituan.net/wmproduct/5e5b99a51eb8f4548332d27121f75e50104735.jpg",
+    "bigImageUrl":"http://p0.meituan.net/wmproduct/5e5b99a51eb8f4548332d27121f75e50104735.jpg",
+    "saleVolume":0,
+    "saleVolumeDecoded":"+",
+    "originPrice":25,
+    "currentPrice":21.99,
+    "spuDesc":"香菇鸡＋功夫肉＋白饭＋浓汤",
+    "praiseNum":0,
+    "praiseNumDecoded":"",
+    "sellStatus":0,
+    "activityType":1,
+    "skuList":[
+        {
+            "skuId":1866069621,
+            "spec":"(约150克)",
+            "soldStatus":0,
+            "realStock":-1,
+            "activityStock":-1,
+            "minPurchaseNum":-1,
+            "restrict":1,
+            "originPrice":25,
+            "currentPrice":21.99,
+            "boxFee":2,
+            "skuPromotionInfo":"8.8折 限1份",
+            "count":0
+        }
+    ],
+    "spuAttrList":[
+
+    ],
+    "spuPromotionInfo":"8.8折 限1份",
+    "activityPolicy":{
+        "discountByCount":{
+            "count":0,
+            "discount":1
+        }
+    },
+    "statusDesc":""
+  }
+]
+
+module.exports.data = recommend

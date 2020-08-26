@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<view class="home">
+  <!--定位 -->
+  <view class="header bgc-primary clearfix">
+    <view class="float-left">
+      <icon class="iconfont icon-location text-xxl"></icon>
+      <text class="text-base">{{ userInfo.city }} {{ userInfo.province }}</text>
+    </view>
+  </view>
+
+  <view class="container">
+    <!-- 搜索框 -->
+    <view class="search bgc-gray">
+      <icon class="iconfont icon-search color-disabled"></icon>
+      <input placeholder="肯德基"></input>
+    </view>
+
+    <!-- 分类 -->
+    <view class="card mt-1">
+      <view class="types-group clearfix">
+        <view class="type-list" wx:for="{{types}}" wx:for-item="type">
+          <view class="icon-wrapper" style="background-color: {{type.color}}">
+            <icon class="iconfont {{type.icon}} color-white text-xxl"></icon>
+          </view>
+          <text class="text-sm title block">{{ type.title }}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 任务 -->
+    <view class="task-card mt-1 clearfix">
+      <icon class="iconfont icon-hongbao float-left color-red"></icon>
+      <view class="float-left">
+        <view>
+        <text class="text-base">下单领金币</text>
+        <icon class="iconfont icon-jinbi"></icon>
+        </view>
+        <view>
+          <text class="text-sm color-disabled">订单金额满20，金币可抵现</text>
+        </view>
+      </view>
+      <button size="mini" class="float-right color-white">去领取</button>
+    </view>
+
+    <!-- 优惠套餐 -->
+    <view class="card mt-1">
+      <view class="clearfix">
+        <view class="float-left">
+          <text class="text-xl color-red">神价格</text>
+          <text class="text-gray text-base ml-1">这么买更优惠</text>
+        </view>
+        <view class="float-right">
+          <text class="text-gray text-sm">更多</text>
+          <icon class="iconfont icon-arrow-right text-sm text-gray ml-1"></icon>
+        </view>
+      </view>
+
+      <view class="recommend-group clearfix">
+          <view class="recommend-list float-left" wx:for="{{recommend}}" wx:for-item="item">
+            <view class="content">
+              <image src="{{item.bigImageUrl}}"></image>
+              <view class="text-ellipsis text-base">{{ item.spuName }}</view>
+            </view>
+            <view class="color-red"> 
+              <text class="text-sm">￥</text>
+              <text class="text-lg">{{ item.currentPrice }}</text>
+              <text class="text-sm color-gray text-line-through ml-1">￥{{ item.originPrice }}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <view class="mt-2">
+      <text class="block text-xl">附近商家</text>
+    </view>
+
+    <view class="shop-group">
+      <view class="card mt-1 clearfix" wx:for="{{merchant}}" wx:for-item="shop">
+        <view class="shop-image float-left">
+          <image src="{{shop.picUrl}}"></image>
+        </view>
+        <view class="shop-info">
+          <text class="block text-ellipsis shop-name">{{ shop.shopName }}</text>
+          <view class="clearfix">
+            <view class="float-left">
+              <text class="text-sm color-gray">{{ shop.wmPoiScore / 10 }}</text>
+              <text class="text-sm color-gray ml-1">{{ unescape(shop.monthSalesTip) }}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
